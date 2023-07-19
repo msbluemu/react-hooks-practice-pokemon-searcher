@@ -1340,6 +1340,33 @@
         "front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/150.png",
         "back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/150.png"
       }
+    },
+    {
+      "name": "rose",
+      "hp": "hp",
+      "sprites": {
+        "front": "",
+        "back": ""
+      },
+      "id": 151
+    },
+    {
+      "name": "rose",
+      "hp": "hp",
+      "sprites": {
+        "front": "",
+        "back": ""
+      },
+      "id": 152
+    },
+    {
+      "name": "rose",
+      "hp": "100",
+      "sprites": {
+        "front": "",
+        "back": ""
+      },
+      "id": 153
     }
   ]
 }

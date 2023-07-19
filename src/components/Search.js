@@ -1,14 +1,20 @@
 import React, {useState, useEffect} from "react";
 
-function Search({ onSearch }) {
+function Search({ pokemons, setPokemons }) {
   const [searchQuery, setSearchQuery] = useState("");
   
   const handleSearch = (e) => {
-    const query = e.target.value.toLowerCase();
-    setSearchQuery(query);
-    onSearch(query)
+    setSearchQuery(e.target.value);
+    filterPokemons(e.target.value)
   };
  
+  function filterPokemons(query){
+    const filteredPokemons = pokemons.filter((pokemon) => 
+       pokemon.name.toLowerCase().includes(query.toLowerCase())
+    );
+    setPokemons(filteredPokemons)
+  }
+
 
   return (
     <div className="ui search">
